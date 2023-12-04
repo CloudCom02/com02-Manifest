@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: com02-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: com
+  template:
+    metadata:
+      labels:
+        app: com
+    spec:
+      containers:
+      - name: com02-deploy
+        image: kimminchae/com02-docker
