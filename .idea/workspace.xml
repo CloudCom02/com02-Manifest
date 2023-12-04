@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f03b88e-6b0b-4982-ba0e-1b376b087cea" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/svc-lb.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/svc.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
