@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f03b88e-6b0b-4982-ba0e-1b376b087cea" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/svc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/com02-sts.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/com02-svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/mysql-sts.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/hello.deployment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/hello.service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/svc-lb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/svc-lb.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/svc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/svc.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/com02-sts-vol.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +24,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2Z4jR1AWIERLlmtbiYcqbnIE3xy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
   </component>

@@ -1,0 +1,21 @@
+# statefulset
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: com02-sts
+spec:
+  selector:
+    matchLabels:
+      app: com02-sts
+  serviceName: com02-svc-headless
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: com02-sts
+    spec:
+      containers:
+        - name: com02
+          image: ghcr.io/c1t1d0s7/go-myweb
+          ports:
+            - containerPort: 80

@@ -4,7 +4,7 @@ metadata:
   name: com02-service-lb
 spec:
   selector:
-    app: com
+    app: web
   ports:
   - name: com02server
     protocol: TCP

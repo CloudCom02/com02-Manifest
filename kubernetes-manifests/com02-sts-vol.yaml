@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: com02-sts-vol
+spec:
+  selector:
+    matchLabels:
+      app: com02-sts-vol
+  serviceName: com02-headless-vol
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: com02-sts-vol
+    spec:
+      containers:
+        - name: myapp
+          image: ghcr.io/c1t1d0s7/go-myweb:alpine
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: myapp-data
+              mountPath: /data
+  volumeClaimTemplates:
+    - metadata:
+        name: myapp-data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: rook-ceph-block

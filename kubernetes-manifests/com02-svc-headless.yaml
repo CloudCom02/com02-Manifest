@@ -1,0 +1,15 @@
+# statefulset 적용을 위한 headless 서비스
+apiVersion: v1
+kind: Service
+metadata:
+  name: com02-svc-headless
+  labels:
+    app: com02-svc-headless
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 80
+  clusterIP: None
+  selector:
+    app: com02-sts
