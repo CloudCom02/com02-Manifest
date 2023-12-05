@@ -11,7 +11,20 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: hosting
+                name: hello-svc
                 port:
                   number: 80
-
+          - path: "/device"
+            pathType: Prefix
+            backend:
+              service:
+                name: device-svc
+                port:
+                  number: 80
+          - path: "/user"
+            pathType: Prefix
+            backend:
+              service:
+                name: user-svc
+                port:
+                  number: 80
