@@ -1,0 +1,17 @@
+apiVersion: batch/v1beta1
+#apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: updater-cron-job
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: updater
+            image: shinyenggwak/crawl-updater
+            command: ["java", "-jar", "/Updater.jar"]
+            args: ["subBattery", "bluetoothEar"]
+          restartPolicy: OnFailure
