@@ -1,0 +1,44 @@
+## 디플로이먼트
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-deploy-parktest5
+spec:
+  replicas: 3
+  selector:           # deployment - pod 대응용
+    matchLabels:
+      app: web-parktest5
+  template:           # 여기서부터 파드 템플릿
+    metadata:
+      labels:
+        app: web-parktest5      # 파드의 라벨
+    spec:
+      containers:
+      - name: com02-parktest5
+        image: minyeongpark5/com02-cgmtest:0.0.4        
+        env:
+            - name: DB_URL ## 컨테이너 환경 변수명
+              valueFrom:
+                configMapKeyRef:
+                  name: env-config ## 컨피그맵명
+                  key: datasource_url ## 키 항목
+            - name: DB_USERNAME ## 컨테이너 환경 변수명
+              valueFrom:
+                configMapKeyRef:
+                  name: env-config ## 컨피그맵명
+                  key: datasource_username ## 키 항목
+            - name: DB_PASSWORD ## 컨테이너 환경 변수명
+              valueFrom:
+                configMapKeyRef:
+                  name: env-config ## 컨피그맵명
+                  key: datasource_password ## 키 항목
+            - name: MAIL_USERNAME ## 컨테이너 환경 변수명
+              valueFrom:
+                configMapKeyRef:
+                  name: env-config ## 컨피그맵명
+                  key: mail_username ## 키 항목
+            - name: MAIL_PASSWORD ## 컨테이너 환경 변수명
+              valueFrom:
+                configMapKeyRef:
+                  name: env-config ## 컨피그맵명
+                  key: mail_password ## 키 항목

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  datasource_url : 
+  datasource_username : root
+  datasource_password : 
+  mail_username : com02charge@gmail.com
+  mail_password : 
