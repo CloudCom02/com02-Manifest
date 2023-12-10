@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: device-deploy
+spec:
+  selector:
+    matchLabels:
+      app: device-app
+  template:
+    metadata:
+      labels:
+        app: device-app
+    spec:
+      containers:
+        - name: device-cont
+          image: shinyenggwak/onlydevice:0.0.6
+          ports:
+            - containerPort: 8080

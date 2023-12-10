@@ -1,17 +1,14 @@
 apiVersion: batch/v1beta1
-#apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: updater-cron-job
+  name: updater
 spec:
-  schedule: "*/1 * * * *"
+  schedule: "0 9 * * 3"  # 매주 수요일 아침 9시에 돌아가도록 스케줄링
   jobTemplate:
     spec:
       template:
         spec:
           containers:
-          - name: updater
-            image: shinyenggwak/crawl-updater
-            command: ["java", "-jar", "/Updater.jar"]
-            args: ["subBattery", "bluetoothEar"]
+            - name: micro-updater
+              image: shinyenggwak/micro-updater:0.0.5
           restartPolicy: OnFailure

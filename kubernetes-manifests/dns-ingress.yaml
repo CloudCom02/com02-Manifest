@@ -2,29 +2,32 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  ingressClassName: 'nginx'
   rules:
     - host: test.com02cloud.kro.kr
       http:
         paths:
-          - path: "/"
+          - path: /test
             pathType: Prefix
             backend:
               service:
-                name: hello-svc
+                name: hello-service
                 port:
                   number: 80
-          - path: "/device"
+          - path: /device
             pathType: Prefix
             backend:
               service:
-                name: device-svc
+                name: device-service
                 port:
                   number: 80
-          - path: "/user"
+          - path: /user
             pathType: Prefix
             backend:
               service:
-                name: user-svc
+                name: user-service
                 port:
                   number: 80

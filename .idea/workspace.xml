@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f03b88e-6b0b-4982-ba0e-1b376b087cea" name="변경" comment="" />
+    <list default="true" id="4f03b88e-6b0b-4982-ba0e-1b376b087cea" name="변경" comment="dns-ingress는 활성화 x&#10;test-ubuntu.yml만 현재 활용중&#10;data-updater.yml는 job 이후에 활용.">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/data-initialize.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/device-deploy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/device-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/hello-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/mysql-pv.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/mysql-statefulset.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/nginxspace-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/user-deploy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/user-svc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/data-updater.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/data-updater.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/dns-ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/dns-ingress.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="이름 없음" />
+        <option value="쿠버네티스" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="minyeong" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="gke_instant-droplet-406401_asia-northeast3-c_com02cloud" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Z4jR1AWIERLlmtbiYcqbnIE3xy" />
   <component name="ProjectReloadState">
@@ -15,15 +57,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20231204_0000&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20231207_0003",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "221c3111aab36e139cb53ff1ea32b6dc",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kubernetes-manifests" />
+    </key>
+  </component>
   <component name="RunManager" selected="Cloud Code: Kubernetes.Develop on Kubernetes">
     <configuration name="HelloWorldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="java-hello-world" />
@@ -69,7 +127,26 @@
       <option name="presentableId" value="Default" />
       <updated>1701688234710</updated>
       <workItem from="1701688235936" duration="8000" />
+      <workItem from="1701832854921" duration="9411000" />
+      <workItem from="1701866588409" duration="598000" />
+      <workItem from="1701875915525" duration="385000" />
+      <workItem from="1701926182460" duration="24235000" />
     </task>
+    <task id="LOCAL-00001" summary="dns-ingress는 활성화 x&#10;test-ubuntu.yml만 현재 활용중&#10;data-updater.yml는 job 이후에 활용.">
+      <created>1701756171832</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701756171832</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dns-ingress는 활성화 x&#10;test-ubuntu.yml만 현재 활용중&#10;data-updater.yml는 job 이후에 활용." />
+    <option name="LAST_COMMIT_MESSAGE" value="dns-ingress는 활성화 x&#10;test-ubuntu.yml만 현재 활용중&#10;data-updater.yml는 job 이후에 활용." />
   </component>
 </project>
