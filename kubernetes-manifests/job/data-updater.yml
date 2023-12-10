@@ -11,4 +11,5 @@ spec:
           containers:
             - name: micro-updater
               image: shinyenggwak/micro-updater:0.0.5
+              args: ["subBattery"]
           restartPolicy: OnFailure

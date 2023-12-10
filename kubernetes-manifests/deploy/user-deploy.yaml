@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: user-cont
-        image: shinyenggwak/onlyuser
+        image: 당신의 이미지
         ports:
         - containerPort: 8080

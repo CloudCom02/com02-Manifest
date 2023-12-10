@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: device-deploy
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: device-app
@@ -13,6 +14,7 @@ spec:
     spec:
       containers:
         - name: device-cont
-          image: shinyenggwak/onlydevice:0.0.6
+          image: shinyenggwak/onlydevice:0.1.4
+          args: ["subBattery"]
           ports:
             - containerPort: 8080
