@@ -1,0 +1,31 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: updater-1
+spec:
+  schedule: "0 9 * * 2"  # 매주 화요일 아침 9시
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: micro-updater
+              image: shinyenggwak/micro-updater:0.1.2
+              args: ["bluetoothEar"]
+              env:
+                - name: DB_URL
+                  valueFrom:
+                    configMapKeyRef:
+                      name: env-config
+                      key: datasource_url
+                - name: DB_PASSWORD
+                  valueFrom:
+                    secretKeyRef:
+                      name: db-credentials
+                      key: datasource_password
+                - name: DB_USERNAME
+                  valueFrom:
+                    secretKeyRef:
+                      name: db-credentials
+                      key: datasource_username
+          restartPolicy: OnFailure

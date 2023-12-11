@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-app
+  template:
+    metadata:
+      labels:
+        app: hello-app
+    spec:
+      containers:
+        - name: hello-cont
+          image: shinyenggwak/onlytest:1.1
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: env-config
+                  key: datasource_url
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials
+                  key: datasource_password
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials
+                  key: datasource_username
