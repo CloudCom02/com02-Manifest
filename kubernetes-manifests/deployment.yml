@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: com02-deploy
+  name: device-deploy-test
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: com
+      app: m-app
   template:
     metadata:
       labels:
-        app: com
+        app: m-app
     spec:
       containers:
-      - name: com02-deploy
-        image: kimminchae/com02-docker
+      - name: device-deploy-test
+        image: kimminchae/com02-docker:v0.1

@@ -1,29 +1,29 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: com02-sts-vol
+  name: device-sts-vol-test
 spec:
   selector:
     matchLabels:
-      app: com02-sts-vol
-  serviceName: com02-headless-vol
+      app: m-sts-vol
+  serviceName: device-headless-vol
   replicas: 2
   template:
     metadata:
       labels:
-        app: com02-sts-vol
+        app: m-sts-vol
     spec:
       containers:
-        - name: myapp
+        - name: m-app
           image: ghcr.io/c1t1d0s7/go-myweb:alpine
           ports:
             - containerPort: 80
           volumeMounts:
-            - name: myapp-data
+            - name: m-app-data
               mountPath: /data
   volumeClaimTemplates:
     - metadata:
-        name: myapp-data
+        name: m-app-data
       spec:
         accessModes: ["ReadWriteOnce"]
         resources:
