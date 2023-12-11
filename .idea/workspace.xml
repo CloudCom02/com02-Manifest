@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f03b88e-6b0b-4982-ba0e-1b376b087cea" name="변경" comment="" />
+    <list default="true" id="4f03b88e-6b0b-4982-ba0e-1b376b087cea" name="변경" comment="ingress 동작,&#10;각각 분산 디플로이먼트, 서비스 포함&#10;nginx 네임스페이스의 컨트롤러&#10;데이터 이니셜라이저, 업데이터 (job,cronjob)&#10;그리고 내부 sql에 접근할 때 사용했던 외부아이피 생성기로&#10;externalsql 사용 -&gt; 로컬환경에서 서버 테스트할 때 유용했음">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/mysql-pv.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/mysql-statefulset.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/data-initialize.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/job/data-initialize.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/data-updater.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/job/data-updater.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/device-deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/deploy/device-deploy.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/device-svc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/service/device-svc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/dns-ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/ingress/dns-ingress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/externalsql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/test-helper/externalsql.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/hello-svc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/service/hello-svc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/test-ubuntu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/test-helper/test-ubuntu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/user-deploy.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/deploy/user-deploy.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/user-svc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/service/user-svc.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="이름 없음" />
+        <option value="쿠버네티스" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="minyeong" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="gke_instant-droplet-406401_asia-northeast3-c_com02cloud" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Z4jR1AWIERLlmtbiYcqbnIE3xy" />
   <component name="ProjectReloadState">
@@ -15,15 +58,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20231204_0000&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20231207_0003",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "221c3111aab36e139cb53ff1ea32b6dc",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kubernetes-manifests/deploy" />
+      <recent name="$PROJECT_DIR$/kubernetes-manifests/test-helper" />
+      <recent name="$PROJECT_DIR$/kubernetes-manifests/service" />
+      <recent name="$PROJECT_DIR$/kubernetes-manifests/ingress" />
+      <recent name="$PROJECT_DIR$/kubernetes-manifests/job" />
+    </key>
+  </component>
   <component name="RunManager" selected="Cloud Code: Kubernetes.Develop on Kubernetes">
     <configuration name="HelloWorldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="java-hello-world" />
@@ -69,7 +132,34 @@
       <option name="presentableId" value="Default" />
       <updated>1701688234710</updated>
       <workItem from="1701688235936" duration="8000" />
+      <workItem from="1701832854921" duration="9411000" />
+      <workItem from="1701866588409" duration="598000" />
+      <workItem from="1701875915525" duration="385000" />
+      <workItem from="1701926182460" duration="32823000" />
     </task>
+    <task id="LOCAL-00001" summary="dns-ingress는 활성화 x&#10;test-ubuntu.yml만 현재 활용중&#10;data-updater.yml는 job 이후에 활용.">
+      <created>1701756171832</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701756171832</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ingress 동작,&#10;각각 분산 디플로이먼트, 서비스 포함&#10;nginx 네임스페이스의 컨트롤러&#10;데이터 이니셜라이저, 업데이터 (job,cronjob)&#10;그리고 내부 sql에 접근할 때 사용했던 외부아이피 생성기로&#10;externalsql 사용 -&gt; 로컬환경에서 서버 테스트할 때 유용했음">
+      <created>1702189294393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702189294393</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dns-ingress는 활성화 x&#10;test-ubuntu.yml만 현재 활용중&#10;data-updater.yml는 job 이후에 활용." />
+    <MESSAGE value="ingress 동작,&#10;각각 분산 디플로이먼트, 서비스 포함&#10;nginx 네임스페이스의 컨트롤러&#10;데이터 이니셜라이저, 업데이터 (job,cronjob)&#10;그리고 내부 sql에 접근할 때 사용했던 외부아이피 생성기로&#10;externalsql 사용 -&gt; 로컬환경에서 서버 테스트할 때 유용했음" />
+    <option name="LAST_COMMIT_MESSAGE" value="ingress 동작,&#10;각각 분산 디플로이먼트, 서비스 포함&#10;nginx 네임스페이스의 컨트롤러&#10;데이터 이니셜라이저, 업데이터 (job,cronjob)&#10;그리고 내부 sql에 접근할 때 사용했던 외부아이피 생성기로&#10;externalsql 사용 -&gt; 로컬환경에서 서버 테스트할 때 유용했음" />
   </component>
 </project>

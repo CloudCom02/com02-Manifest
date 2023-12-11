@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress
+spec:
+  ingressClassName: 'nginx'
+  rules:
+    - host: test.com02cloud.kro.kr
+      http:
+        paths:
+          - path: /test/
+            pathType: Prefix
+            backend:
+              service:
+                name: hello-service
+                port:
+                  number: 80
+          - path: /device/
+            pathType: Prefix
+            backend:
+              service:
+                name: device-service
+                port:
+                  number: 80
+          - path: /user
+            pathType: Prefix
+            backend:
+              service:
+                name: user-service
+                port:
+                  number: 80
