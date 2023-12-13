@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f03b88e-6b0b-4982-ba0e-1b376b087cea" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/kubernetes-manifests/configmap.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/com02-sts-vol.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/sts-vol.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/com02-sts.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/sts.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/com02-svc-headless.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/svc-headless.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/deployment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/deployment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/svc-lb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/lb-svc.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/deployment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/capacity-deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kubernetes-manifests/svc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes-manifests/capacity-svc.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../com02-BackEnd/package-lock.json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
