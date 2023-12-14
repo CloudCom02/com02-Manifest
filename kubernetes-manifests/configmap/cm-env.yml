@@ -3,8 +3,4 @@ kind: ConfigMap
 metadata:
   name: env-config
 data:
-  datasource_url :
-  datasource_username : root
-  datasource_password : 
-  mail_username : com02charge@gmail.com
-  mail_password :
+  datasource_url : jdbc:mysql://mysql-0.mysql.default.svc.cluster.local:3306/com02?characterEncoding=UTF-8&ServerTimezone=UTC
