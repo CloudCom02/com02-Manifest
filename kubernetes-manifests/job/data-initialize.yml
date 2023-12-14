@@ -9,8 +9,8 @@ spec:
     spec:
       containers:
       - name: init-pod
-        image: shinyenggwak/micro-crawl:0.1.2
-        args: ["subBattery","bluetoothEar","bluetoothSpeaker","mirrorlessCam","bluetoothHead"]
+        image: shinyenggwak/micro-crawl:0.1.7
+        args: ["subBattery"]
         env:
           - name: DB_URL
             valueFrom:

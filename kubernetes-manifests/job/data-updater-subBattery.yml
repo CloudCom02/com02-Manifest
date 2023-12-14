@@ -10,7 +10,7 @@ spec:
         spec:
           containers:
             - name: micro-updater
-              image: shinyenggwak/micro-updater:0.1.2
+              image: shinyenggwak/micro-updater:0.1.3
               args: ["subBattery"]
               env:
                 - name: DB_URL
