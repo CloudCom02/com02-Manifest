@@ -6,6 +6,6 @@ spec:
   type: ClusterIP
   selector:
     app: capacity-app
-  ports:
-    - port: 80
-    targetPort: 8080
+ports:
+  - port: 80
+  targetPort: 8080
