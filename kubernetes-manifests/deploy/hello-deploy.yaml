@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: device-deploy
+  name: hello-deploy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: device-app
+      app: hello-app
   template:
     metadata:
       labels:
-        app: device-app
+        app: hello-app
     spec:
       containers:
-        - name: device-cont
-          image: shinyenggwak/onlydevice:0.1.7
+        - name: hello-cont
+          image: shinyenggwak/onlytest:1.1
           ports:
             - containerPort: 8080
           env:

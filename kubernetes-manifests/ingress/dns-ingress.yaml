@@ -22,10 +22,17 @@ spec:
                 name: device-service
                 port:
                   number: 80
-          - path: /user
+          - path: /user/
             pathType: Prefix
             backend:
               service:
                 name: user-service
+                port:
+                  number: 80
+          - path: /capacity/
+            pathType: Prefix
+            backend:
+              service:
+                name: capacity-service
                 port:
                   number: 80
