@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: capacity-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: capacity-app
+  template:
+    metadata:
+      labels:
+        app: capacity-app
+    spec:
+      containers:
+        - name: capa-cont
+          image: kimminchae/com02-spring-docker:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: env-config
+                  key: datasource_url
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials
+                  key: datasource_password
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials
+                  key: datasource_username
+            - name: MAIL_USERNAME ## 컨테이너 환경 변수명
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials ## 시크릿명
+                  key: mail_username ## 키 항목
+            - name: MAIL_PASSWORD ## 컨테이너 환경 변수명
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials ## 시크릿명
+                  key: mail_password ## 키 항목
